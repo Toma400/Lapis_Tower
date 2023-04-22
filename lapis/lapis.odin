@@ -15,5 +15,7 @@ gets :: proc(text: string = "") -> string {
 puts :: proc(text: string = "") {
     if text != "" {
         fmt.println(text)
+    } else {
+        fmt.println("\n")
     }
 }

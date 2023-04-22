@@ -11,10 +11,10 @@ Therefore, you can look at the table to see features Lapis adds:
 
 | Language | Features                      | Description                                                                  |
 |:--------:| ----------------------------- | ---------------------------------------------------------------------------- |
-|   Odin   | ✤ gets (?str)<br>✤ puts (str) | ✤ Python-like input, returning string value<br>✤ Terminal output from string |
+|   Odin   | ✤ gets (?str)<br>✤ puts (?str) | ✤ Python-like input, returning string value<br>✤ Terminal output from string |
 |    Go    | ✤ Gets ( )<br>✤ Getsb (str)<br>✤ Puts (str) | ✤ Pure input, without print provided<br>✤ Python-like input, returning string value<br>✤ Terminal output from string |
-|   Ruby   | ✤ gets! (?str)                | ✤ Updated `gets` which prints given optional string                          |
-|   Zig    | TBA                           | TBA                                                                          |
+|   Ruby   | ✤ gets! (?str)                 | ✤ Updated `gets` which prints given optional string                          |
+|   Zig    | TBA                            | TBA                                                                          |
 
 ---
 #### Odin
