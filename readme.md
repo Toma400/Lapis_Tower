@@ -16,6 +16,7 @@ Therefore, you can look at the table to see features Lapis adds:
 |   Ruby   | ✤ gets! (?str)                | ✤ Updated `gets` which prints given optional string                          |
 |   Zig    | TBA                           | TBA                                                                          |
 
+---
 #### Odin
 Write following import on top of everything:
 ```Odin
@@ -38,7 +39,7 @@ main :: proc() {
     lapis.puts(sth)
 }
 ```
-
+---
 #### Ruby
 In Ruby, you can use this code on top of the file, which will direct Ruby to
 the folder with `lapis.rb` file:
@@ -50,7 +51,7 @@ to the script you write in, you can do that and slightly modify import statement
 ```Ruby
 require_relative "./lapis.rb"
 ```
-
+---
 #### Go
 In Go, import statement are rather complicated. Assuming you put Lapis in folder,
 so structure of the file looks like this:
