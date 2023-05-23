@@ -16,10 +16,6 @@ proc conc* (cont: OrderedTable): string =
 proc ts* (i: int): string =
   return intToStr(i)
 
-# shortened and error-handled name for 'parseInt'
-# : using 'if ts(x) != nil is adviced to avoid bugs!
-proc ti* (s: string): Option[int] =
-  try:
-    return parseInt(s)
-  except:
-    return nil
+# shortened function name for 'parseInt'
+proc ti* (s: string): int =
+  return parseInt(s)

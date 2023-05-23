@@ -1,5 +1,5 @@
 # Lapis
-Lapis is multilingual mini-library directed at three languages: Odin, Ruby and Go.
+Lapis is multilingual mini-library directed at four languages: Odin, Nim, Ruby and Go.
 It is made purely out of necessity of simplifying some basic features that are
 missing in those languages, or are made in a way that makes them annoying.
 
@@ -36,7 +36,7 @@ Therefore, you can look at the table to see features Lapis adds:
     <td> ✤ conc (OrderedTable<br> 　　　　[int, string] ) </td>
     <td> ✤ Returns string from given string table </td></tr><tr>
     <td> ✤ ti (str) </td>
-    <td> ✤ Shortcut conversion of string to int<br>　Recommended to check <code>!= nil</code> </td></tr><tr>
+    <td> ✤ Shortcut conversion of string to int </td></tr><tr>
     <td> ✤ ts (int) </td>
     <td> ✤ Shortcut conversion of int to string </td>
   </tr>
