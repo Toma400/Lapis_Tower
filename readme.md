@@ -9,12 +9,48 @@ language-specific set of tools that were not available at the time.
 
 Therefore, you can look at the table to see features Lapis adds:
 
-| Language | Features                      | Description                                                                  |
-|:--------:| ----------------------------- | ---------------------------------------------------------------------------- |
-|   Odin   | ✤ gets (?str)<br>✤ puts (?str) | ✤ Python-like input, returning string value<br>✤ Terminal output from string |
-|    Go    | ✤ Gets ( )<br>✤ Getsb (str)<br>✤ Puts (str) | ✤ Pure input, without print provided<br>✤ Python-like input, returning string value<br>✤ Terminal output from string |
-|   Ruby   | ✤ gets! (?str)                 | ✤ Updated `gets` which prints given optional string                          |
-|   Zig    | TBA                            | TBA                                                                          |
+<table width=100%>
+  <tr>
+    <th width=10%><center> Language    </center></th>
+    <th width=30%><center> Features    </center></th>
+    <th><center> Description </center></th>
+  </tr>
+  <tr id="Odin">
+    <td align="center" rowspan=2> Odin </td>
+    <td> ✤ gets (?str) </td>
+    <td> ✤ Python-like input, returning string value </td></tr><tr>
+    <td> ✤ puts (?str) </td>
+    <td> ✤ Terminal output</td>
+  </tr>
+  <tr id="Go">
+    <td align="center" rowspan=3> Go </td>
+    <td> ✤ Gets ( ) </td>
+    <td> ✤ Pure input, without print provided </td></tr><tr>
+    <td> ✤ Getsb (str) </td>
+    <td> ✤ Python-like input, returning string value </td></tr><tr>
+    <td> ✤ Puts (str) </td>
+    <td> ✤ Terminal output from string </td>
+  </tr>
+  <tr>
+    <td align="center" rowspan=3> Nim </td>
+    <td> ✤ conc (OrderedTable<br> 　　　　[int, string] ) </td>
+    <td> ✤ Returns string from given string table </td></tr><tr>
+    <td> ✤ ti (str) </td>
+    <td> ✤ Shortcut conversion of string to int<br>　Recommended to check <code>!= nil</code> </td></tr><tr>
+    <td> ✤ ts (int) </td>
+    <td> ✤ Shortcut conversion of int to string </td>
+  </tr>
+  <tr>
+    <td align="center" rowspan=1> Ruby </td>
+    <td> ✤ gets! (?str) </td>
+    <td> ✤ Updated <code>gets</code> which prints given optional string </td>
+  </tr>
+  <tr>
+    <td align="center" rownspan=1> Zig </td>
+    <td align="center"> TBA </td>
+    <td align="center"> TBA </td>
+  </tr>
+</table>
 
 ---
 #### Odin
@@ -39,6 +75,19 @@ main :: proc() {
     lapis.puts(sth)
 }
 ```
+---
+#### Nim
+To use library in Nim, add simple import call on top (example assume that you
+use Lapis in the same directory as your main .nim file):
+```Nim
+import lapis
+
+var some_int = 5
+var some_tb = {1: "Here I see ", 2: ts(some_int), 3: " monsters!"}.toOrderedTable
+
+echo conc(some_tb)
+```
+
 ---
 #### Ruby
 In Ruby, you can use this code on top of the file, which will direct Ruby to
